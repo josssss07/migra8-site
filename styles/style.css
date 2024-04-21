@@ -13,15 +13,28 @@ html{
     background: #1f1c1c;
   }
   #about{
-    background: #1f1c1c;
+    background: #e0dfdf;
   }
   #services{
     background: #1f1c1c;
   }
   #contact{
-    background: #1f1c1c;
+    background: #eaeaea;
   }
   #team{
     background: #1f1c1c;
   }
-  
+
+  section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+  }
+  section h2{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-transform: capitalize;
+    text-shadow: 10px 10px 3px rgba(0,0,0, 0.2);
+  }
