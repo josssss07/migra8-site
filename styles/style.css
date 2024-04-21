@@ -1,0 +1,27 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box  ;
+}
+
+html{
+    scroll-behavior: smooth;
+    color: antiquewhite;
+}
+
+#home{
+    background: #1f1c1c;
+  }
+  #about{
+    background: #1f1c1c;
+  }
+  #services{
+    background: #1f1c1c;
+  }
+  #contact{
+    background: #1f1c1c;
+  }
+  #team{
+    background: #1f1c1c;
+  }
+  
