@@ -53,8 +53,10 @@
     transition: all ease-in-out 0.5s;
   }
   nav li a:hover{
-    color: #bbb;
+    color: #b1afaf;
+    transition: 0.2s ease ;
   }
+  
   ::-webkit-scrollbar {
     height: 8px;
     width: 5px;
@@ -69,4 +71,53 @@
 
 ::-webkit-scrollbar-corner {
     background: #1f1c1c;
+}
+
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 33px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: whitesmoke;
+}
+
+@media (max-width: 768px) {
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        translate: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        translate: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position:fixed;
+        left: -100%;
+        top:70px;
+        gap:0;
+        flex-direction: column;
+        background-color: rgba(38, 50, 56, 0.5);
+        text-align: center;
+        transition: 0.3s ease-in;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu:active{
+        left: 0;
+    }
 }
