@@ -12,20 +12,20 @@
     <header>
       <div class="wrapHead">
         <div id="brand">
-          <h1>MIGRA8</h1>
+          <h1>MIRAG8</h1>
         </div>
         <nav>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
           <ul class="nav-menu">
             <li class="nav-item"><a href="#home" class="scroll">Home</a></li>
             <li class="nav-item"><a href="#about" class="scroll">About Us</a></li>
             <li class="nav-item"><a href="#team" class="scroll">The Team</a></li>
             <li class="nav-item"><a href="#contact" class="scroll">Contact Us</a></li>
           </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
         </nav>
       </div>
     </header>
@@ -44,7 +44,12 @@
         <div class="about-big">
           <h1>
             ABOUT US
-          </h1>
+          </h1>nction(){
+            var docEl = $(document),
+                headerEl = $('header'),
+                headerWrapEl = $('.wrapHead'),
+                navEl = $('nav'),
+                linkScroll = $('.scroll');
         </div>
         <div class="about-text">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a quod inventore repudiandae et temporibus modi earum, eius tempora ducimus accusamus doloremque id vel enim, ipsum pariatur? Vel, quas qui?</p>
@@ -64,6 +69,7 @@
       <h2>contact</h2>
     </section>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
     <script src="./scripts/ham.js"></script>
   </body>
