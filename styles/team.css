@@ -1,0 +1,15 @@
+.team-meet{
+    font-family: 'Ranade', sans-serif;
+    color:white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-us-area{
+    font-family: 'Ranade', sans-serif;
+    color: black;
+    justify-content: center;
+    text-align: center;    
+    display: grid;
+}
