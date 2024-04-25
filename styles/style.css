@@ -21,13 +21,14 @@ html{
   }
   #contact{
     background: #eaeaea;
+    height: 75vh;
   }
   #team{
     background: #1f1c1c;
   }
 
   section{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     z-index: 0;
@@ -48,6 +49,7 @@ html{
   margin: 8px;
   display: flex;
   align-items: center;
+  height: 100vh;
 }
 
 .text-to-describe{
@@ -75,6 +77,7 @@ html{
   .home-content{
     display: flex;
     flex-direction: column;
+    height: none;
   }
   .text-big{
     font-size: medium;
@@ -118,8 +121,31 @@ html{
 }
 
 @media  (max-width: 768px){
+ 
+  #about, #team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
  .about-big{
   font-family: 'Ranade', sans-serif;
   font-size: medium;
  } 
+   
+ .carousel {
+  height: 20rem;
+  width: 20rem;
+ }
+ .about-content{
+  justify-content: center;
+  align-items: center;
+}
+
+}
+
+#about , #team{
+  display: flex;
+  justify-content: space-around;
 }
